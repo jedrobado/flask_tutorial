@@ -13,7 +13,7 @@ def index():
 		},
 		{	
 			'author':{'username':'Jules'},
-			'body':'Front End Development'
+			'body':'The Fundamentals of Game Design and Development'
 		},
 		{	
 			'author':{'username':'Rotherford'},
