@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Sign In</h1>
+    <form action="" method="post" novalidate>
+        {{ reg_form.hidden_tag() }}
+         <p>
+            {{ reg_form.last_name.label }}<br>
+            {{ reg_form.last_name(size=32) }}
+            {% for error in reg_form.last_name.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+         <p>
+            {{ reg_form.first_name.label }}<br>
+            {{ reg_form.first_name(size=32) }}
+            {% for error in reg_form.first_name.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+         <p>
+            {{ reg_form.email.label }}<br>
+            {{ reg_form.email(size=32) }}
+            {% for error in reg_form.email.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ reg_form.username.label }}<br>
+            {{ reg_form.username(size=32) }}
+            {% for error in reg_form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ reg_form.password.label }}<br>
+            {{ reg_form.password(size=32) }}
+            {% for error in reg_form.password.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ reg_form.register() }}</p>
+    </form>
+{% endblock %}
