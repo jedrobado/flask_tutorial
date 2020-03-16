@@ -17,11 +17,11 @@ def index():
 		},
 		{	
 			'author':{'username':'Rotherford'},
-			'body':'The Concepts Object Oriented Programming'
+			'body':'The Concepts of Object Oriented Programming'
 		},
 		{	
 			'author':{'username':'Nhoj'},
-			'body':'The Art Project Management'
+			'body':'The Art of Project Management'
 		}
 
 	]
